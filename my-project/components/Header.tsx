@@ -115,7 +115,7 @@ export const Header = () => {
                 placeholder="Max price"
                 onValueChange={(value) => setMaxPrice(value)}
               >
-                {["", "100", "250", "500", "750", "900", "1000+"].map(
+                {["", "100", "250", "500", "750", "900", "1000"].map(
                   (_, i) => (
                     <SearchSelectItem key={i} value={_.toString()}>
                       {i === 0 ? "No Minimum" : `${_.toString()}`}
